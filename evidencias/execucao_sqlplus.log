@@ -1,0 +1,122 @@
+SQL*Plus: Release 23.26.4.0.0 - Production on Wed Nov 18 05:13:59 2026
+Version 23.26.4.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+Last Successful login time: Wed Nov 18 2026 05:13:58 +00:00
+
+Connected to:
+Oracle AI Database 26ai Free Release 23.26.4.0.0 - Develop, Learn, and Run for Free
+Version 23.26.4.0.0
+
+=== Find Me | Instalacao e demonstracao Oracle ===
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+14 rows created.
+
+
+12 rows created.
+
+
+10 rows created.
+
+
+12 rows created.
+
+
+11 rows created.
+
+
+10 rows created.
+
+
+4 rows created.
+
+
+Commit complete.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+PL/SQL procedure successfully completed.
+
+=== Quantidade de registros ===
+
+TABELA			      LINHAS
+------------------------- ----------
+FM_USUARIO			  14
+FM_CASO 			  12
+FM_ALERTA			  10
+FM_HISTORICO_STATUS		  37
+
+4 rows selected.
+
+=== Bloco 1: SELECT INTO, IF/ELSIF/ELSE e FOR ===
+Caso 5 | PUBLICADO | FORA_DA_FILA_DE_PUBLICACAO
+Caso 11 | EM_ANALISE | REVISAR_CADASTRO
+Caso 12 | VALIDADO | PREPARAR_DIVULGACAO
+Casos processados: 3
+
+PL/SQL procedure successfully completed.
+
+=== Bloco 2: publicacao, localizacao e auditoria ===
+Bloqueio por papel confirmado: ORA-20002: Somente um moderador pode realizar esta operacao.
+Bloqueio por status confirmado: ORA-20004: A publicacao exige um caso VALIDADO.
+Caso 12: VALIDADO -> PUBLICADO (moderador 13)
+Alertas ativos do caso 12: 1
+Alerta 7 | EM_ACOMPANHAMENTO | 2026-11-18 12:00 | Alerta demonstrativo 7
+Alerta 100 | PUBLICADO | 2026-11-18 05:14 | Alerta demonstrativo 12
+Alerta 1 | PUBLICADO | 2026-11-17 12:00 | Alerta demonstrativo 1
+Alerta 8 | EM_ACOMPANHAMENTO | 2026-11-17 12:00 | Alerta demonstrativo 8
+Alerta 2 | PUBLICADO | 2026-11-16 12:00 | Alerta demonstrativo 2
+Alerta 3 | PUBLICADO | 2026-11-15 12:00 | Alerta demonstrativo 3
+Alerta 4 | PUBLICADO | 2026-11-14 12:00 | Alerta demonstrativo 4
+Alerta 5 | PUBLICADO | 2026-11-13 12:00 | Alerta demonstrativo 5
+Alerta 6 | PUBLICADO | 2026-11-12 12:00 | Alerta demonstrativo 6
+Alertas ativos listados: 9
+Caso 12: PUBLICADO -> LOCALIZADO (moderador 14)
+Apos localizar: status=LOCALIZADO, alertas ativos=0, eventos=4
+Historico do caso 12:
+(criacao) -> EM_ANALISE | autor 2
+EM_ANALISE -> VALIDADO | autor 13
+VALIDADO -> PUBLICADO | autor 13
+PUBLICADO -> LOCALIZADO | autor 14
+Alerta 7 | EM_ACOMPANHAMENTO | 2026-11-18 12:00 | Alerta demonstrativo 7
+Alerta 1 | PUBLICADO | 2026-11-17 12:00 | Alerta demonstrativo 1
+Alerta 8 | EM_ACOMPANHAMENTO | 2026-11-17 12:00 | Alerta demonstrativo 8
+Alerta 2 | PUBLICADO | 2026-11-16 12:00 | Alerta demonstrativo 2
+Alerta 3 | PUBLICADO | 2026-11-15 12:00 | Alerta demonstrativo 3
+Alerta 4 | PUBLICADO | 2026-11-14 12:00 | Alerta demonstrativo 4
+Alerta 5 | PUBLICADO | 2026-11-13 12:00 | Alerta demonstrativo 5
+Alerta 6 | PUBLICADO | 2026-11-12 12:00 | Alerta demonstrativo 6
+Alertas ativos listados: 8
+Demonstracao aprovada. Alteracoes desfeitas para repetir os blocos.
+
+PL/SQL procedure successfully completed.
+
+SQL> Disconnected from Oracle AI Database 26ai Free Release 23.26.4.0.0 - Develop, Learn, and Run for Free
+Version 23.26.4.0.0
